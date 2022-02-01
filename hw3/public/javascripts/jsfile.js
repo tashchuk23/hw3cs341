@@ -9,6 +9,7 @@
 	  if (mess.toLowerCase().indexOf("vegan") >= 0){
 	      alert("Cheesecake contains dairy");
 	  } else {
+              alert($().jquery);
 	      $(".formc").hide();
 	      $("#orderconf").delay(300).slideDown(400);
 	      var quantity =  $("#qops").val();
