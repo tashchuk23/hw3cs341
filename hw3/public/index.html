@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--HTML file for SE HW2
+Natalie Tashchuk
+2/22/2022
+
+references:
+for modification 1:
+https://stackoverflow.com/questions/3480771/how-do-i-check-if-string-contains-substring
+
+https://stackoverflow.com/questions/8622336/jquery-get-value-of-selected-radio-button 
+
+https://stackoverflow.com/questions/6594014/javascript-innerhtml-adding-instead-of-replacing?noredirect=1&lq=1
+
+https://stackoverflow.com/questions/12359354/how-can-i-set-innerhtml-equal-to-two-variables
+
+for modification 2:
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+^ this is the menu I based mine off of
+
+https://css-tricks.com/solved-with-css-dropdown-menus/
+^this is the menu I tried using unsuccessfully
+-->
+
+<html>
+    <head>  <!-- defines header -->
+      <link rel="stylesheet" href="/stylesheets/style.css">  <!-- links CSS file -->
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+      </script>  <!-- this script loads the jQuery library through a CDN
+		      (Content Delivery Network)-->
+
+
+
+<script src="javascripts/jsfile.js">
+	</script>
+
+
+
+
+<title>Cheesecake</title>
+ </head>
+    
+<body>  <!-- defines body, the majority of the web page -->
+
+<h1>Cheesecake Order Form</h1>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="picture of a cheesecake with frosting"
+width = "200" height = "200">
+
+
+<div class="wrapper" id="orderconf">
+  <br><head>
+   Thank you! Your order has been placed:
+  </head><br>
+  </div>
+  
+<p class="formc">Quantity Topping</p>
+
+<table class="formc" width="30%" id="tab">
+  <tr>  <!-- table row -->
+    <td>  <!-- table data  -->
+      <form action="/action_page.php">
+        <select id="qops" name="ops">
+         <option value="0">0</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="max">max</option>
+      </form>
+    </td>
+    
+<td>
+   <form class="formc" id="tops" >  <!-- form allows user input -->
+     <input type="radio" id="t1" name="topping" value="Plain">
+       <label for="t1">Plain</label>
+     <br>
+     
+     <input type="radio" id="t2" name="topping" value="Cherry">
+       <label for="t2">Cherry</label>
+     <br>
+     
+     <input type="radio" id="t3" name="topping" value="Chocolate">
+       <label for="t3">Chocolate</label>
+     </form> 
+</td>
+</tr>
+</table>
+
+<p class="formc" id="notes">Notes: </p> 
+  <form>
+    <textarea class="formc" rows="4" cols="43" id="texta" placeholder="Enter any special instructions here."></textarea>
+    <!-- textarea must end on same line to have placeholder appear -->
+  </form>
+
+<form>
+  <input class="formc" type="button" value="Order" id="orderb"> </input>
+</form>
+
+
+<table id="ordertable">
+  <tr>
+    <td>
+      <h3>Total Orders For Month of:</h3>
+    </td>
+    <td>
+      <div class="dropdown">
+  <button class="dropbtn" id="dropbut">Jan</button>
+  <div class="dropdown-content">
+     <nav role="navigation" id="topNav">
+    <a class="month" href="#" value="Jan">Jan</a>
+    <a class="month" href="#" value="Feb">Feb</a>
+    <a class="month" href="#" value="Mar">Mar</a>
+    <a class="month" href="#" value="Apr">Apr</a>
+    <a class="month" href="#" value="May">May</a>
+    <a class="month" href="#" value="Jun">Jun</a>
+    <a class="month" href="#" value="Jul">Jul</a>
+    <a class="month" href="#" value="Aug">Aug</a>
+    <a class="month" href="#" value="Sep">Sep</a>
+    <a class="month" href="#" value="Oct">Oct</a>
+    <a class="month" href="#" value="Nov">Nov</a>
+    <a class="month" href="#" value="Dec">Dec</a>
+    </nav>
+    
+  </div>
+      </div>
+    </td>
+  </tr>
+  </table>
+
+<ul>  <!-- unordered list, li = list element -->
+  <li>11 cherry</li>
+  <li>17 chocolate</li>
+  <li>31 plain</li>
+  
+</div>
+</body>
+</html>

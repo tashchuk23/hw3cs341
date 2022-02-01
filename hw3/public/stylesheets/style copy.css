@@ -1,0 +1,104 @@
+/* CSS file for SE HW 2
+   Natalie Tashchuk
+   1/24/2022
+
+   https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/repeating-radial-gradient()
+   credit for gradient background^
+*/
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #583e20;
+    background: -webkit-repeating-radial-gradient(top left, circle, #fff2c7, #f0b5a0 10%, #fff2c7 20%); 
+    /* the webkit gradient creates a fun gradient background of colors behind the specified elements */
+}
+
+h3{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    color: #ad1911;
+    font-size: 25px;
+    background: -webkit-repeating-radial-gradient(top left, circle, #fff2c7, #f0b5a0 10%, #fff2c7 20%);
+}
+
+
+body {
+    /* I was unable to define a background for the body while also having seperate backgrounds for
+     for other elements */
+}
+
+h1 {
+    color: #ad1911;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    font-size: 40px;
+    background: -webkit-repeating-radial-gradient(top left, circle, #fff2c7, #f0b5a0 10%, #fff2c7 20%); 
+    margin-left: 1px;
+}
+
+td{
+    color: #af3444;
+    font-size: 16px;
+    background: -webkit-repeating-radial-gradient(top left, circle, #fff2c7, #f0b5a0 10%, #fff2c7 20%);
+}
+
+ul{
+    color: #af3444;
+    background: -webkit-repeating-radial-gradient(top left, circle, #fff2c7, #f0b5a0 10%, #fff2c7 20%);
+}
+
+input[type="text"], textarea {
+    background-color : #fff2c7;
+}
+
+/*
+  credit for the following CSS code goes to the links under "modification 2" in 
+  my html file
+*/
+
+.dropbtn {
+  background-color: #f0b5a0;
+  padding: 16px;
+  border: none;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+  color: #ad1911;
+  font-size: 25px;
+}
+
+.dropdown {
+  position: relative;  /*set dropdown to be directly under button */
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff2c7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #af3444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f0b5a0;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #f0b5a0;}
+
+
+/*creates the scroll bar for dropdown menu  */
+#topNav{
+    overflow-y:scroll;
+    max-height:250px;/* you can change as you need it */
+    overflow-x:hidden; /* hides the horizontal scroll*/
+}
